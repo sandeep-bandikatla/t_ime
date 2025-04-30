@@ -17,7 +17,7 @@ class TimeResource(Resource):
 class MyFlask(Flask):
     def add_api(self):
         self.api = Api(self)
-        self.api.add_resource(TimeResource, "/codegnana/time")
+        self.api.add_resource(TimeResource, "/codegnantime")
 
 app = MyFlask(__name__)
 app.add_api()
